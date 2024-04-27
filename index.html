@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inicio de sesión</title>
+<link rel="stylesheet" href="style.css" charset="UTF-8">
+
+<script src="login.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <h1><img src="Domino's_pizza_logo.svg.png"alt="Logo de la empresa"/></h1> 
+
+    </div>
+</header>
+
+<main>
+    <h2 id="texto"></h2>
+    <div class="login-container">
+        <h1>Inicio de Sesión </h1> 
+        <form name="login" onsubmit="return Login()"> 
+            <div class="form-row"> 
+                <input id="usuario" type="text" class="Input" value="" placeholder="Usuario" required autocomplete="username" /> 
+            </div>
+            <div class="form-row"> 
+                <input id="password" type="password" class="Input" value="" placeholder="Contraseña" required autocomplete="current-password" /> 
+            </div>
+            <div class="form-row"> 
+                <input type="button" class="boton"    value="Entrar" onclick="Login()">
+                <input type="reset" class= "boton-borrar" value="Borrar">
+            </div>
+         </form>
+         </div>
+        </main>
+       
+    </body>
+</html>
